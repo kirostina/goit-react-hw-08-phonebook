@@ -31,12 +31,12 @@ export const ContactForm = () => {
         <label>
           
           <input {...register('name', { required: true })} type="text" placeholder="Name"/>
-          {errors.name && <span>This field is required</span>}
+          {errors.name && <span>❌</span>}
         </label>
         <label>
           
           <input {...register('number', { required: true })} type="text" placeholder="number"/>
-          {errors.number && <span>This field is required</span>}
+          {errors.number && <span>❌</span>}
         </label>
 
         <button type="submit">Add contact</button>

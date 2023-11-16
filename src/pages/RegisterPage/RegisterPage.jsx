@@ -27,19 +27,19 @@ const RegisterPage = () => {
               
                 
                 <input {...register('email', { required: true })} type="email" placeholder="Email"/>
-                {errors.email && <span>This field is required</span>}
+                {errors.email && <span>❌</span>}
               
              
                 
                 <input {...register('name', { required: true })} type="text" placeholder="Name"/>
-                {errors.name && <span>This field is required</span>}
+                {errors.name && <span>❌</span>}
              
               
                 <input
                   {...register('password', { required: true, minLength: 7 })}
                   type="password" placeholder="Password"
                 />
-                {errors.password && <span>This field is required</span>}
+                {errors.password && <span>❌</span>}
               
         
               <button type="submit">Sign Up</button>
